@@ -1,0 +1,92 @@
+.game{
+    position:absolute;
+    width: 2000px;
+    height: 563px;
+    top: 0px;
+    left: 0px;
+    background-image: url("/images/Game/bgbg.png");
+}
+#score{
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: black;
+    position: absolute;
+    top:10px;
+    left:10px;
+
+}
+#hero{
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/Game/Hero-right.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 380px;
+}
+#campFire{
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/Game/campFire.png");
+    background-size: 40px 40px;
+    position: relative;
+    top:340px;
+    left: 1440px;
+    animation: campFireMov 2s infinite linear;
+}
+#zombie{
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/Game/zombie.png");
+    background-size: 40px 40px;
+    position: relative;
+    top:300px;
+    left:1160px;
+    animation: zombiemove 3s infinite linear;
+}
+@keyframes zombiemove  {
+    0%{
+        left: 1160px;
+
+    }
+    100%{
+        left:20px;
+
+    }
+}
+@keyframes campFireMov {
+    0%{
+        left: 1140px;
+
+    }
+    100%{
+        left:20px;
+
+    }
+}
+
+.jump{
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0%{
+        top:380px;
+
+    }
+    30%{
+        top:330px;
+
+    }
+    50%{
+        top: 250px;
+
+    }
+    80%{
+        top: 330px;
+
+    }
+    100%{
+        top: 380px;
+
+    }
+}

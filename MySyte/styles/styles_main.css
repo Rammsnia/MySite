@@ -1,0 +1,311 @@
+.dropmenu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 50%;
+    top: 50px;
+    right: 70px;
+    cursor: pointer;
+}
+.dropmenu:hover, .dropmenu:focus{
+    background-color: white;
+    color: black;
+
+}
+.dropmenu{
+    position: relative;
+
+}
+.drop_menu_content{
+    display: none;
+    position: absolute;
+    min-width: 280px;
+    top: 53px;
+    font-size: 15px;
+}
+.drop_menu_content a{
+    margin-right: 20px;
+    float: left;
+    font-size: 25px;
+}
+
+.show{
+    display: block;
+}
+.about{
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    color: aliceblue;
+    position: absolute;
+    top:65px;
+    left:100px;
+}
+
+body{
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-weight: 700;
+    height: 100%;
+    overflow: hidden;
+}
+.content{
+    width: 1170px;
+    margin:0px auto;
+}
+li{
+    list-style: none;
+    float: left; /*В один ряд*/
+    margin-right: 60px;
+    font-size: 13px;
+
+}
+.logoHref{
+    color:black;
+}
+.logoHref:before{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: aliceblue;
+}
+.menu{
+    position: absolute;
+    left: 350px;
+    top:50px;
+}
+.money{
+    position: absolute;
+    left:1170px;
+    top:12px
+}
+.YT{
+    position: absolute;
+    left: 1135px;
+    top:12px;
+
+}
+a.YT:hover{
+    animation-name: ani_but;
+    animation-duration: 1s;
+    animation-iteration-count:0,1;
+    animation-direction: alternate;
+    animation-fill-mode: both,forwards;
+}
+a.money:hover{
+    animation-name: ani_but;
+    animation-duration: 1s;
+    animation-iteration-count:0,1;
+    animation-direction: alternate;
+    animation-fill-mode: both,forwards;
+}
+@keyframes ani_but {
+    0%{
+        transform: scale(1.25,1.25);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.textMain{
+    position: absolute;
+    color: aliceblue;
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 120px;
+    text-align: center;
+    top:170px;
+    left: 80px;
+}
+.upP{
+    /*Задний фон*/
+    position: absolute;
+    background: #B7BABE;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 250px;
+}
+.downP{
+    /*Задний фон*/
+    position: absolute;
+    background: #191B1D;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+}
+div.imageB{
+    position: absolute;
+    left: 10px;
+
+}
+
+.Per25{
+    position: absolute;
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    top:25px;
+    left:5px;
+    font-style: normal;
+
+}
+.logo{
+    position: absolute;
+    font-size: 25px;
+    left: 95px;
+    top:50px;
+    width: 169px;
+    height: 81px;
+
+}
+.partOne{
+    color: #191B1D;
+}
+.partTwo{
+    color: #191B1D;
+}
+
+
+.images{
+    position: absolute;
+    top:25px;
+    left:700px;
+}
+.Reg{
+    position: absolute;
+    left:1000px;
+    top:12px;
+    font-size: 14px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 1000px;
+    transition: all 1s ease;
+}
+.Reg:hover{
+    color: black;
+    background: white;
+    transition: all 1s ease;
+}
+
+.regPole{
+    position: absolute;
+    left: 400px;
+    top: 150px;
+
+}
+td{
+    color: aliceblue;
+}
+input{
+    border-radius: 5px 10px;
+    background-color: aliceblue;
+    color: #191B1D;
+}
+.MYR{
+    position: absolute;
+    right: 1270px;
+    top:50px;
+}
+
+.open_menu{
+    position: absolute;
+    left:100px;
+    top:50px;
+}
+
+@media  screen and (max-width: 1110px) {
+    .images{
+        top: 240px;
+        left: 200px;
+    }
+    .about {
+        font-size: 16px;
+    }
+    .menu{
+        left: 250px
+    }
+}
+@media screen and (min-width: 1400px) {
+    .menu{
+        left:500px;
+    }
+    .images{
+        left:900px;
+    }
+    .about{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 950px){
+    .menu{
+        left: 200px;
+    }
+   li{
+       margin-right: 30px;
+   }
+}
+@media screen and (max-width: 810px) {
+    .MYR{
+        top:10px;
+        right: 1210px;
+    }
+    .Reg{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 654px){
+    .logo{
+        left: 30px;
+    }
+    .textMain{
+        left: 30px;
+    }
+
+
+}
+@media screen and (max-width: 600px){
+    .menu{
+        display: none;
+    }
+    .Reg{
+        display: none;
+    }
+    .dropmenu{
+        display:inline-block;
+    }
+    .textMain{
+        top:210px;
+        font-size: 70px;
+    }
+    .about{
+        left:30px;
+    }
+    .images{
+        top:350px;
+        left: 30px;
+    }
+    body{
+        overflow: visible;
+    }
+}
+
+

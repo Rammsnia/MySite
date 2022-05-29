@@ -1,0 +1,84 @@
+.Per100 {
+    position: absolute;
+    font-family: "Montserrat", "Arial Обычный", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    top: 25px;
+    left: 1px;
+    font-style: normal;
+}
+.textcenok{
+    position: absolute;
+    font-size: 12px;
+    top: 26px;
+    left: 45px;
+}
+.play{
+    position: absolute;
+    left:710px;
+    top:300px;
+    font-size: 20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 1000px;
+    transition: all 1s ease;
+}
+.play:hover{
+    color: black;
+    background: white;
+    transition: all 1s ease;
+}
+.bg{
+    position: absolute;
+    left: 450px;
+    top: 20px;
+}
+@media screen and (max-width: 1293px){
+    .bg{
+        position: absolute;
+        left:200px;
+        top: 50px;
+    }
+    .play{
+        left: 460px;
+        top: 330px;
+    }
+}
+@media screen and (max-width: 880px){
+    .bg{
+        position: absolute;
+        left: 50px;
+    }
+    .play{
+        left: 310px;
+    }
+}
+
+@media screen and (max-width: 654px){
+    .bg{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+    }
+    .play{
+        left: 180px;
+        font-size: 13px;
+        top:200px;
+
+    }
+}
+@media screen and (max-width: 390px){
+    .bg{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+    }
+    .play{
+        left: 130px;
+        font-size: 13px;
+        top:150px;
+
+    }
+}
+
